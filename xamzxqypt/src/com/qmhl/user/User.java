@@ -13,8 +13,8 @@ public class User {
 	 
 	 private String address;
 	 
-	 
-	 private String phone;
+
+	 private String tel;
 
 
 	public int getId() {
@@ -57,13 +57,20 @@ public class User {
 	}
 
 
-	public String getPhone() {
-		return phone;
+	public String getTel() {
+		return tel;
 	}
 
 
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setTel(String tel) {
+		this.tel = tel;
 	}
-	 
+
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", userName=" + userName + ", age=" + age + ", address=" + address + ", tel=" + tel
+				+ "]";
+	}
+
 }
